@@ -35,7 +35,7 @@
 		$cmplogoshow=preg_replace('/\s+/', '', $cmplogo);
 		if(substr($cmplogoshow,-4)==".jpg")
 		{	
-			echo "<img src=".$cmplogoshow." width=100 height=100><br>";
+			echo "<img src=".URL."uploads/images/".$cmplogoshow." width=100 height=100><br>";
 		}
 		else
 		{

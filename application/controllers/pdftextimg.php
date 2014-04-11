@@ -838,6 +838,7 @@ function get_text()
     }
 
     $path = $data[ 'upload_data' ][ 'full_path' ];
+    
     $impath=$data[ 'upload_data' ][ 'file_path' ];
     $im=$data[ 'upload_data' ][ 'raw_name' ];
     $imgf=$impath."images/".$im."img";
@@ -898,6 +899,7 @@ function get_text()
       shell_exec("rm ".$imgf."-00".$n.".ppm ");
       $imgfpath=substr($imgf,17);
       $logo=$imgfpath."-00".$n.".jpg";
+      $logo=end(explode("/",$logo));
       $n=$n+1;
   }
   else
